@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>FamilyMart</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta charset="utf-8" />
+</head>
+
+<body>
+	<img src="start.png" onclick="start();" id="startScreen">
+    <div id="foreground">
+        <div class="main-map">
+            <img src="img/mapasia.png">
+        </div>
+
+        <div class="countries">
+            <div class="country" id="thailand">
+                <img src="img/thailand.png">
+            </div>
+            <div class="country" id="vietnam">
+                <img src="img/vietnam.png">
+            </div>
+            <div class="country" id="china">
+                <img src="img/china.png">
+            </div>
+            <div class="country" id="japan">
+                <img src="img/japan.png">
+            </div>
+            <div class="country" id="taiwan">
+                <img src="img/taiwan.png">
+            </div>
+            <div class="country" id="philippines">
+                <img src="img/philippines.png">
+            </div>
+            <div class="country" id="indonesia">
+                <img src="img/indonesia.png">
+            </div>
+        </div>
+        <div class="text">
+            <div id="thailand-text" onmouseover="PlaySound('ta')">
+				<p>thailand</p>
+				<audio id='ta' src="audio/ยินดีต้อนรับสู่ร้านค้า.mp3"></audio>
+            </div>
+            <div id="vietnam-text" onmouseover="PlaySound('vt')">
+				<p>vietnam</p>
+				<audio id='vt' src="audio/chào mừng bạn đến cửa hàng.mp3"></audio>
+            </div>
+            <div id="china-text" onmouseover="PlaySound('cn')">
+				<p>china</p>
+				<audio id='cn' src="audio/欢迎光临.mp3"></audio>
+            </div>
+            <div id="japan-text" onmouseover="PlaySound('jp')">
+				<p>japan</p>
+				<audio id='jp' src="audio/ストアへようこそ.mp3"></audio>
+            </div>
+            <div id="taiwan-text" onmouseover="PlaySound('tw')">
+				<p>taiwan</p>
+				<audio id='tw' src="audio/欢迎光临.mp3"></audio>
+            </div>
+            <div id="philippines-text" onmouseover="PlaySound('ph')">
+				<p>philippines</p>
+				<audio id='ph' src="audio/maligayang pagdating sa tindahan.mp3"></audio>
+            </div>
+            <div id="indonesia-text" onmouseover="PlaySound('in')">
+				<p>indonesia</p>
+				<audio id='in' src="audio/selamat datang di toko.mp3"></audio>
+            </div>
+        </div>
+
+        <div class="welcomes">
+            <div id="thai-welcome">
+                <h1>ยินดีต้อนรับสู่ร้านค้า</h1>
+            </div>
+            <div id="viet-welcome">
+                <h1>chào mừng bạn đến cửa hàng</h1>
+            </div>
+            <div id="chinese-welcome">
+                <h1>欢迎光临</h1>
+            </div>
+            <div id="japanese-welcome">
+                <h1>ストアへようこそ</h1>
+            </div>
+            <div id="taiwanese-welcome">
+                <h1>歡迎光臨</h1>
+            </div>
+            <div id="filipino-welcome">
+                <h1>maligayang pagdating sa tindahan</h1>
+            </div>
+            <div id="indonesian-welcome">
+                <h1>selamat datang di toko</h1>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="background">
+        <audio id="audio"></audio>
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/audio.js"></script>
+
+</html>
